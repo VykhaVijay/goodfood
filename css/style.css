@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     --primary: #3CB815;
     --secondary: #F65005;
@@ -115,6 +114,20 @@
     color: var(--dark);
 }
 
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
@@ -174,19 +187,6 @@
     border-radius: 3rem;
 }
 
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
-    }
-    
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
 
 .page-header {
     padding-top: 12rem;
@@ -233,8 +233,6 @@
     left: 0;
     transform: translateX(0);
 }
-
-
 
 /*** About ***/
 .about-img img {
